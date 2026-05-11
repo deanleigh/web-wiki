@@ -1,40 +1,36 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Web Wiki
+description: A practical knowledge base for client website conversations, decisions, and delivery readiness.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: The practical website guide for clear client conversations and confident delivery.
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Read the Overview
+      link: /overview/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: View on GitHub
+      link: https://github.com/deanleigh/web-wiki
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## Next steps
+A comprehensive guide to your organisation's digital strategy.
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+## Main Sections
+
+<CardGrid>
+	<LinkCard title="Planning and Project Management" href="/planning-and-project-management/" description="Goals, scope, stakeholders, risks, and delivery readiness from kickoff to launch." />
+	<LinkCard title="Hosting" href="/hosting/" description="Account ownership, environments, uptime expectations, backups, and incident readiness." />
+	<LinkCard title="SEO" href="/seo/" description="Search visibility fundamentals, technical baseline, content quality, and ongoing maintenance." />
+	<LinkCard title="Security and Compliance" href="/security-and-compliance/" description="Hosting and platform security, data protection, access management, legal obligations, and audit." />
+	<LinkCard title="Accessibility" href="/accessibility/" description="Inclusive design and content standards that improve reach, quality, and compliance." />
+	<LinkCard title="Usability" href="/usability/" description="Reduce friction in key user journeys through clearer structure and better task flow." />
+	<LinkCard title="Design" href="/design/" description="Visual identity, layout, interaction, and the consistency that makes a site feel coherent." />
+	<LinkCard title="Content" href="/content/" description="Strategy, information architecture, governance, ownership, and compliance." />
+	<LinkCard title="Language and Localisation" href="/language-and-localisation/" description="Voice, dialect, technical language declarations, multilingual URLs, and translation workflow." />
+	<LinkCard title="Roles and Responsibilities" href="/roles-and-responsibilities/" description="Clarify ownership, sign-off points, and escalation paths across the website lifecycle." />
 </CardGrid>
